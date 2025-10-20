@@ -1,0 +1,212 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A clean, modern font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Very light gray background */
+    color: #333; /* Dark gray for general text */
+}
+
+/* Resume Container - mimics the overall paper shape */
+.resume-container {
+    width: 8.5in; /* Standard paper width */
+    height: 13in; /* Standard paper height */
+    margin: 30px auto; /* Center the resume on the page */
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack header and main content */
+    overflow: hidden; /* Prevent content from spilling */
+}
+/* Header/Name Section - The top colored bar with name and picture */
+.name-section {
+    background-color: #006400; /* Deep Green for the top bar */
+    color: white;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-section h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.name-section .title {
+    margin: 5px 0 0 0;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+.profile-pic img {
+    width: 100px; /* Size of the profile picture */
+    height: 100px;
+    border-radius: 50%; /* Makes it circular */
+    border: 4px solid white; /* White border around the image */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+/* Main Content Section - Sidebar and main details */
+.content-section {
+    display: flex;
+    flex-grow: 1; /* Allows it to take up remaining height */
+}
+/* Sidebar Styling */
+.sidebar {
+    width: 30%; /* Adjust width as needed */
+    background-color: #e0ffe0; /* Light Green for the sidebar background */
+    padding: 30px 25px;
+    box-sizing: border-box; /* Include padding in width */
+    color: #222; /* Slightly darker text for contrast */
+}
+.sidebar h2 {
+    color: #004d00; /* Darker green for sidebar headings */
+    font-size: 1.3em;
+    border-bottom: 2px solid #006400; /* Green underline for headings */
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.sidebar h2:first-of-type {
+    margin-top: 0; /* No top margin for the first heading */
+}
+.sidebar p, .sidebar ul {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.sidebar a {
+    color: #006400; /* Green links */
+    text-decoration: none;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.sidebar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+.skill-category {
+    font-weight: bold;
+    color: #004d00; /* Darker green for skill categories */
+}
+/* Main Details Section */
+.main-details {
+    width: 70%; /* Remaining width */
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+.main-details h2 {
+    color: #006400; /* Deep green for main section headings */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.main-details section {
+    margin-bottom: 30px;
+}
+/* Education, Projects, Certifications common styling */
+.edu-item, .project-item {
+    margin-bottom: 20px;
+}
+.edu-item h3, .project-item h3 {
+    color: #333;
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+.edu-item p, .project-item p, .certifications li {
+    font-size: 1em;
+    margin: 0 0 5px 0;
+}
+.project-item .technologies {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+.certifications ul {
+    list-style: disc; /* Use bullet points for certifications */
+    padding-left: 20px;
+    padding-bottom: 50px;
+   /* allow it to expand */
+   /* make sure content isn’t hidden */
+height: 400px;
+  overflow-y:visible;
+  margin-bottom: 50px;
+}
+/* Optional: Add some hover effects for a modern touch */
+nav a:hover {
+    color: #e0ffe0; /* Light green on hover */
+
+/* biodata css styling */
+/* --- BIODATA SPECIFIC STYLES (Add these to your existing style.css) --- */
+/* Ensures the header/footer of the biodata page are simple (unlike the resume's colored bar) */
+body {
+ font-family: "Segoe UI", Arial, sans-serif;
+ background-color: #f8f6ff;
+ color: #333;
+ margin: 0;
+ padding: 0;
+ }
+ .container {
+ max-width: 800px;
+ margin: 40px auto;
+ background: #fff;
+ border-radius: 15px;
+ box-shadow: 0 0 15px rgba(182, 0, 232, 0.1);
+ padding: 40px;
+}
+ header {
+ text-align: center;
+ border-bottom: 3px solid #693706;
+ padding-bottom: 10px;
+ margin-bottom: 30px;
+ }
+ header h1 {
+ margin: 0;
+ font-size: 2.2em;
+ color: #76410d;
+ letter-spacing: 1px;
+ }
+ .section {
+ margin-bottom: 25px;
+ }
+ .section h2 {
+ color: #733d04;
+ border-left: 5px solid #773d0b;
+ padding-left: 10px;
+ font-size: 1.3em;
+ margin-bottom: 15px;
+ }
+ .info p {
+ margin: 6px 0;
+ line-height: 1.6;
+ }
+ strong {
+ color: #444;
+ }
+ ul {
+ margin: 0;
+ padding-left: 20px;
+ list-style-type: square;
+ }
+ footer {
+ text-align: center;
+ border-top: 1px solid #ccc;
+ margin-top: 30px;
+ padding-top: 10px;
+ font-size: 0.9em;
+ color: #777;
+ }
+/* script.js for all */
+/* --- CSS for JavaScript Interactivity (Step 4) --- */
+.highlight {
+    background-color: #fffacd; /* Light yellow background */
+    border: 2px dashed #006400; /* Use your main green color for the border */
+    padding: 10px;
+    cursor: pointer; 
+}
+#about-me {
+    margin-top: 20px;
+    padding-top: 10px;
+}
