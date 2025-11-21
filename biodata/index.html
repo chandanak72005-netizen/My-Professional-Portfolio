@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR (SAME FOR BOTH PAGES, JUST TRIGGERS TOGGLE) -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#" onclick="showPage('page1')">Home</a></li>
+        <li><a href="#" onclick="showPage('page2')">More Info</a></li>
+    </ul>
+    <button id="darkToggle">🌙</button>
+</nav>
+
+
+<!-- ======================== PAGE 1 ======================== -->
+<div id="page1" class="biodata-container fade-in">
+
+    <!-- Header -->
+    <header class="header-section fade-in">
+        <img src="your-photo.jpg" alt="Profile Photo" class="profile-photo">
+        <div class="header-info">
+            <h1>Chandana K</h1>
+            <p><strong>B.Tech in Computer Science Engineering</strong></p>
+            <p class="contact">
+                📞 +91 9880290304 <br>
+                ✉ chandana.k72005@gmail.com <br>
+                📍 Bengaluru, Karnataka
+            </p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/chandanak72005">Profile</a></p>
+            <p>GitHub: <a href="https://github.com/chandanakt72005-netizen">GitHub Link</a></p>
+        </div>
+    </header>
+
+    <!-- Personal Statement -->
+    <section class="section fade-in">
+        <h2>Personal Statement</h2>
+        <p>
+            I am a passionate and dedicated B.Tech CSE student aiming to build a strong foundation in software development and cloud computing.
+            I enjoy solving problems, creating user-friendly applications, and continuously learning emerging technologies to become a professional software developer.
+        </p>
+    </section>
+
+    <!-- Personal Information -->
+    <section class="section fade-in">
+        <h2>Personal Information</h2>
+        <table class="info-table">
+            <tr><td><strong>Date of Birth:</strong></td><td>27 July 2005</td></tr>
+            <tr><td><strong>Gender:</strong></td><td>Female</td></tr>
+            <tr><td><strong>Nationality:</strong></td><td>Indian</td></tr>
+            <tr><td><strong>Languages Known:</strong></td><td>English, Kannada, Hindi</td></tr>
+            <tr><td><strong>Marital Status:</strong></td><td>Single</td></tr>
+            <tr><td><strong>Address:</strong></td><td>Seegehalli, Bengaluru</td></tr>
+        </table>
+    </section>
+
+    <!-- Family -->
+    <section class="section fade-in">
+        <h2>Family Details</h2>
+        <table class="info-table">
+            <tr><td><strong>Father’s Name:</strong></td><td>Kotresh H.R</td></tr>
+            <tr><td><strong>Mother’s Name:</strong></td><td>Suma N</td></tr>
+            <tr><td><strong>Siblings:</strong></td><td>Nayana K</td></tr>
+        </table>
+    </section>
+
+    <!-- Education -->
+    <section class="section fade-in">
+        <h2>Educational Qualifications</h2>
+        <table class="edu-table">
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Subjects</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>B.Tech CSE</td>
+                <td>East Point College</td>
+                <td>2023–2027</td>
+                <td>Java, DSA, Cloud, AI</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>PUC</td>
+                <td>Sri Chaitanya</td>
+                <td>2022–2023</td>
+                <td>PCMB</td>
+                <td>76%</td>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>Sri Chaitanya</td>
+                <td>2021</td>
+                <td>All Subjects</td>
+                <td>78%</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- NEXT BUTTON -->
+    <div class="button-container fade-in">
+        <button onclick="showPage('page2')">Next →</button>
+    </div>
+
+</div>
+
+
+
+
+<!-- ======================== PAGE 2 ======================== -->
+<div id="page2" class="biodata-container fade-in" style="display:none;">
+
+    <!-- Skills -->
+    <section class="section fade-in">
+        <h2>Skills</h2>
+
+        <div class="skills-row">
+
+            <div class="skill-col">
+                <h3 class="skill-title">Technical (Hard) Skills</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript, React)</li>
+                    <li>Java Programming</li>
+                    <li>Database Management (MySQL, MongoDB)</li>
+                    <li>Cloud Computing (AWS Cloud Foundations)</li>
+                    <li>Version Control (Git & GitHub)</li>
+                </ul>
+            </div>
+
+            <div class="skill-col">
+                <h3 class="skill-title">Soft Skills</h3>
+                <ul>
+                    <li>Effective Communication</li>
+                    <li>Problem-Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Adaptability & Leadership</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section fade-in">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Smart Safety Shoes (IoT):</strong> Real-time GPS alerts.</li>
+            <li><strong>Resume Analyzer (AI):</strong> NLP based skill extraction.</li>
+            <li><strong>Lung Cancer Detection (AI):</strong> TensorFlow prediction system.</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="section fade-in">
+        <h2>Technical Experience</h2>
+        <ul>
+            <li>Developed Python, HTML, CSS, MySQL projects.</li>
+            <li>Portfolio website using GitHub Pages.</li>
+            <li>Hands-on with AI tools (Colab, Jupyter).</li>
+        </ul>
+    </section>
+
+    <!-- Interests -->
+    <section class="section fade-in">
+        <h2>Personal Interests</h2>
+        <ul>
+            <li>Editing & Photography</li>
+            <li>Web Design</li>
+            <li>Travelling</li>
+            <li>AI Tools</li>
+        </ul>
+    </section>
+
+    <!-- Declaration -->
+    <section class="section fade-in declaration">
+        <h2>Declaration</h2>
+        <p>I declare all information is true to my knowledge.</p>
+        <p><strong>Place:</strong> Bengaluru</p>
+        <p><strong>Date:</strong> 21/11/2025</p>
+        <p class="signature"><strong>Signature:</strong> Chandana K</p>
+    </section>
+
+    <!-- BACK BUTTON -->
+    <div class="button-container fade-in">
+        <button onclick="showPage('page1')">← Back</button>
+    </div>
+
+</div>
+
+
+
+
+<!-- PAGE SWITCH SCRIPT -->
+<script>
+function showPage(page) {
+    document.getElementById("page1").style.display = (page === "page1") ? "block" : "none";
+    document.getElementById("page2").style.display = (page === "page2") ? "block" : "none";
+}
+</script>
+
+<script src="script1.js"></script>
+</body>
+</html>
